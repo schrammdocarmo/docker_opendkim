@@ -30,3 +30,8 @@ Add these lines to /etc/postfix/main.cf:
 	milter_default_action = accept
 	smtpd_milters = inet:DKIM_CONTAINER_IP:12301
 	non_smtpd_milters = inet:DKIM_CONTAINER_IP:12301
+
+## Howto configure OpenDKIM?
+
+Have a look here:
+https://www.devops.zone/mailserver/how-to-configure-dkim-for-your-domain-with-postfix/
