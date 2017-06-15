@@ -26,4 +26,4 @@ VOLUME ["/etc/opendkim"]
 CMD ["/usr/sbin/opendkim", "-f",  "-l",  "-x",  "/etc/opendkim/opendkim.conf"]
 
 # Expose ports.
-EXPOSE 12311
+EXPOSE 12301
