@@ -1,0 +1,18 @@
+[Unit]
+Description=Docker Container OpenDKIM
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+TimeoutStartSec=0
+RestartSec=60
+StartLimitInterval=240
+StartLimitBurst=5
+ExecStart=/usr/bin/docker run -v /etc/opendkim:/etc/opendkim:rw -p 127.0.0.1:12301:12301 --name=dkim1 opendkim
+ExecStop=/usr/bin/docker stop dkim1
+ExecStopPost=/usr/bin/docker rm -f dkim1
+
+[Install]
+WantedBy=default.target
+
