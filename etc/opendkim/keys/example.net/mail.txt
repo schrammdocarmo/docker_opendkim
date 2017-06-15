@@ -1,0 +1,3 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; k=rsa; "
+	  "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1Yc2ljFztzxXKzhXhbChGEDTnc1UNgGZ8qJ6/Kiq4VUdnP51LK0Je4FMXn61qdreApTiXeSyBkM93mo7iw7d8bnKdxOjEppePldV96HeCNuEDhUULojSJPCj770Fbl4z64cr9V/HTYuEhbajc26nQJDLIDaL0qUPY4EhBiZbjIQIDAQAB" )  ; ----- DKIM key mail for example.net
+
